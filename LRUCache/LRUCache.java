@@ -1,12 +1,13 @@
 package LRUCache;
 import java.util.HashMap;
 import java.util.Map;
-
+//Least Recently Used Cache
+//A cache has limited size.When it becomes full and a new item is added, we must remove something.
+//LRU rule: Remove the item that was used the longest time ago.
 /*
  LRU Cache
  - get(key): O(1)
  - put(key, value): O(1)
-
  Design:
  - HashMap for fast lookup
  - Doubly Linked List to track usage order
